@@ -1,0 +1,83 @@
+.about {
+    width: 1900px;
+    background-image: url("../img/82fcd3_7a9abf1cf93845128c7233ec2618ee98_mv2\ 1.jpg");
+    background-repeat: no-repeat;
+    min-height: 393px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.about > .about__title {
+    margin-bottom: 29px;
+}
+
+.about__title {
+    font-size: 36px;
+    font-family: "Raleway-SemiBold";
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 135px;
+    padding-right: 135px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__item {
+    padding-top: 110px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    position: relative;
+}
+
+.about__item::before {
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 106px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.about__item--document::before {
+    background-image: url("../img/Group 64.svg");
+    background-repeat: no-repeat;
+}
+
+.about__item--idea::before {
+    background-image: url("../img/Group 63.svg");
+    background-repeat: no-repeat;
+}
+
+.about__item--years::before {
+    background-image: url("../img/Group 48.svg");
+    background-repeat: no-repeat;
+}
+
+.about__item .about__title {
+    font-size: 20px;
+    color: #00186B;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.about__text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 400px;
+    text-align: center;
+}

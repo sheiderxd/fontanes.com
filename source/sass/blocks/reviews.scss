@@ -1,0 +1,85 @@
+.reviews {
+    padding-top: 35px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 1900px;
+}
+
+.reviews__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    padding-left: 170px;
+    padding-right: 170px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.reviews__title {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Raleway-SemiBold";
+    text-transform: uppercase;
+}
+
+.reviews__item {
+    border: 1px solid black;
+    width: 500px;
+    height: 750px;
+}
+
+.reviews__controls {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.reviews__button {
+    position: absolute;
+    top: 450px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.reviews__button-1 {
+    left: 50px;
+}
+
+.reviews__button-2 {
+    right: 50px;
+}
+
+.reviews__button-1 img {
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+.reviews__controls-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.reviws__controls-item {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.reviws__controls-item:last-of-type {
+    margin-right: 0;
+}
+
+.reviws__controls-item--active {
+    border: solid 1px #0038FF;
+    background-color: #0038FF;
+}

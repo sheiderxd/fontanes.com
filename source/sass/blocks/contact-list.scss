@@ -1,0 +1,11 @@
+.contact-list {
+    align-items: center;
+}
+
+.contact-list__item {
+    margin-right: 20px;
+}
+
+.contact-list__item:last-of-type {
+    margin-right: 0;
+}

@@ -1,0 +1,39 @@
+.contacts {
+    width: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Raleway-SemiBold";
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacts__map iframe {
+    width: 830px;
+    height: 460px;
+    margin-bottom: 30px;
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__wrapper .contacts__title {
+    color: #00186B;
+    font-size: 24px;
+    font-family: "Raleway-SemiBold";
+    margin: 0;
+    margin-right: 10px;
+}
+
+.contacts__subtitle {
+    font-size: 24px;
+    font-family: "Raleway";
+    margin: 0;
+}

@@ -1,0 +1,61 @@
+.form__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Raleway-SemiBold";
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__form {
+    width: 675px;
+}
+
+.form__button {
+    width: 675px;
+    height: 82px;
+    color: white;
+    background-color: #0038FF;
+    border: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Raleway-SemiBold";
+    box-shadow: 0px 0px 15px #0038FF;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:focus {
+    box-shadow: 0px 0px 25px #0038FF;
+    transition: box-shadow 0.2s;
+}
+
+.form__input {
+    color: #00186B;
+    font-size: 24px;
+    width: 675px;
+    height: 70px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.form__input::placeholder {
+    color: #00186B;
+}
+
+.form__input:focus,
+.form__input:hover {
+    border: none;
+    outline: none;
+}
+
+.form__textarea {
+    width: 675px;
+    height: 245px;
+}
