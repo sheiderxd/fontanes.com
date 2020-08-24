@@ -1,17 +1,27 @@
+.form {
+    flex-grow: 1;
+    min-width: 420px;
+    max-width: 675px;
+    display: flex;
+    flex-direction: column;
+}
+
 .form__title {
     text-transform: uppercase;
     font-size: 36px;
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Bold";
     text-align: center;
     margin-bottom: 40px;
 }
 
 .form__form {
-    width: 675px;
+    max-width: 675px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__button {
-    width: 675px;
+    width: 100%;
     height: 82px;
     color: white;
     background-color: #0038FF;
@@ -19,7 +29,7 @@
     box-sizing: border-box;
     text-transform: uppercase;
     font-size: 30px;
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Bold";
     box-shadow: 0px 0px 15px #0038FF;
     text-align: center;
     transition: box-shadow 0.2s;
@@ -35,7 +45,8 @@
 .form__input {
     color: #00186B;
     font-size: 24px;
-    width: 675px;
+    width: 100%;
+    flex-shrink: 1;
     height: 70px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -56,6 +67,19 @@
 }
 
 .form__textarea {
-    width: 675px;
+    width: 100%;
     height: 245px;
+}
+
+@media (max-width: 1199px) {
+    .form {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .form__form {
+        max-width: 100%;
+    }
 }

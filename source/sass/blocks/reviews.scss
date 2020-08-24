@@ -1,8 +1,9 @@
 .reviews {
     padding-top: 35px;
     position: relative;
-    margin-bottom: 20px;
-    width: 1900px;
+    padding-bottom: 20px;
+    width: $fullhd-width;
+    margin: 0 auto;
 }
 
 .reviews__list {
@@ -12,7 +13,7 @@
     display: flex;
     padding-left: 170px;
     padding-right: 170px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 15px;
 }
@@ -21,7 +22,7 @@
     margin-bottom: 35px;
     text-align: center;
     font-size: 36px;
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Bold";
     text-transform: uppercase;
 }
 
@@ -29,6 +30,14 @@
     border: 1px solid black;
     width: 500px;
     height: 750px;
+}
+
+.reviews__item {
+    margin-right: 25px;
+}
+
+.reviews__item:last-of-type {
+    margin-right: 0px;
 }
 
 .reviews__controls {
@@ -43,6 +52,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    padding: 0;
 }
 
 .reviews__button-1 {
@@ -82,4 +92,113 @@
 .reviws__controls-item--active {
     border: solid 1px #0038FF;
     background-color: #0038FF;
+}
+
+@media (max-width: 1899px) {
+    .reviews {
+        width: 100%;
+    }
+
+    .reviews__button,
+    .reviews__button img {
+        width: 35px;
+        height: 70px;
+        top: 50%;
+    }
+}
+
+@media (min-width: $desktop-width) and (max-width: 1899px) {
+    .reviews__item {
+        height: 520px;
+        margin-right: 20px;
+        flex-grow: 1;
+    }
+
+    .reviews__list {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .reviews__button-1 {
+        left: 10px;
+    }
+    
+    .reviews__button-2 {
+        right: 10px;
+    }
+}
+
+@media (min-width: $square-width) and (max-width: 1199px) {
+    .reviews__item {
+        height: 520px;
+        margin-right: 15px;
+    }
+
+    .reviews__list {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .reviews__button-1 {
+        left: 10px;
+    }
+    
+    .reviews__button-2 {
+        right: 10px;
+    }
+}
+
+@media (min-width: $tablet-width) and (max-width: 999px) {
+    .reviews__item {
+        height: 325px;
+        margin-right: 10px;
+    }
+
+    .reviews__list {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .reviews__button-1 {
+        left: 10px;
+    }
+    
+    .reviews__button-2 {
+        right: 10px;
+    }
+
+    .reviews__button,
+    .reviews__button img {
+        width: 25px;
+        height: 50px;
+        top: 50%;
+    }
+}
+
+@media  (max-width: 767px) {
+    .reviews__item {
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 15px;
+        height: 180px;
+        max-width: 500px;
+    }
+
+    .reviews__controls-list {
+        display: none;
+    }
+
+    .reviews__list {
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .reviews__button {
+        display: none;
+    }
+    
+    .reviews__list {
+        flex-wrap: wrap;
+    }
 }

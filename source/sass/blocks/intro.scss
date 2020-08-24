@@ -1,15 +1,17 @@
 .intro {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
     position: relative;
     box-sizing: border-box;
-    width: 1900px;
+    width: $fullhd-width;
+    min-height: 500px;
+    margin: 0 auto;
 }
 
 .intro__block {
     position: absolute;
-    top: 130px;
-    left: 211px;
+    top: 25%;
+    left: 8%;
 }
 
 .intro__title {
@@ -18,8 +20,8 @@
 }
 
 .intro__text {
-    font-family: "Raleway-SemiBold";
-    font-size: 30px;
+    font-family: "Raleway-Bold";
+    font-size: 36px;
     padding: 0;
     margin: 0;
     margin-bottom: 32px;
@@ -30,11 +32,11 @@
     background-color: #0038FF;
     color: white;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     padding-top: 15px;
     box-sizing: border-box;
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Bold";
     width: 280px;
     height: 70px;
     box-shadow: 0px 0px 10px rgba(0, 56, 255, 0.75);
@@ -50,4 +52,28 @@
 
 .intro__photo {
     vertical-align: bottom;
+    height: 700px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 1899px) {
+    .intro {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .intro__photo {
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        padding-left: 0px;
+        padding-right: 0px;
+        box-sizing: border-box;
+        min-width: $mobile-width;
+    }
 }

@@ -1,15 +1,16 @@
 .fountains {
-    width: 1900px;
+    width: $fullhd-width;
+    margin: 0 auto;
 }
 
 .fountains__list {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
 }
 
 .fountains__list > .fountains__wrapper {
@@ -20,7 +21,7 @@
     justify-content: space-between;
     display: flex;
     flex-shrink: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .fountains__item {
@@ -70,4 +71,132 @@
 
 .fountains__link:hover .fountains-item__title  {
     display: none;
+}
+
+.fountains-item--1 {
+    margin-bottom: 20px;
+}
+
+.fountains-item--2 {
+    margin-right: 20px;
+}
+
+.fountains-item--4 {
+    margin-left: 20px;
+}
+
+@media (min-width: $desktop-width) and (max-width: 1899px) {
+    .fountains {
+        width: 100%;
+    }
+
+    .fountains__wrapper {
+        flex-shrink: 1;
+    }
+
+    .fountains__list {
+        flex-wrap: nowrap;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .fountains-item__photo {
+        width: 100%;
+    }
+}
+
+@media (min-width: $square-width) and (max-width: 1199px) {
+    .fountains {
+        width: 100%;
+    }
+
+    .fountains__wrapper {
+        flex-shrink: 1;
+    }
+
+    .fountains__list {
+        flex-wrap: nowrap;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .fountains-item__photo {
+        width: 100%;
+    }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1199px) {
+    .fountains {
+        width: 100%;
+    }
+
+    .fountains__wrapper {
+        width: 100%;
+        flex-shrink: 1;
+    }
+    
+    .fountains__list {
+        flex-wrap: wrap;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .fountains-item--4 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        max-height: 450px;
+        overflow: hidden;
+    }
+
+    .fountains-item--4 .fountains-item__photo {
+        width: 100%;
+        margin-top: -550px;
+    }
+
+    .fountains-item__photo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fountains {
+        width: 100%;
+    }
+
+    .fountains__wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+
+    .fountains__list {
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .fountains__item {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 320px;
+        overflow: hidden;
+        min-width: 320px;
+    }
+    
+    .fountains-item__photo {
+        width: 100%;
+    }
+
+    .fountains-item__photo {
+        object-fit: fill;
+    }
+
+    .fountains-item--4 {
+        width: 100%;
+        margin-left: 0;
+        max-height: 450px;
+        overflow: hidden;
+    }
 }

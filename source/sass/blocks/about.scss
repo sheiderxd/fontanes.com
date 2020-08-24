@@ -1,10 +1,13 @@
 .about {
-    width: 1900px;
+    width: 100%;
     background-image: url("../img/82fcd3_7a9abf1cf93845128c7233ec2618ee98_mv2\ 1.jpg");
     background-repeat: no-repeat;
     min-height: 393px;
     padding-top: 25px;
     box-sizing: border-box;
+    background-size: cover;
+    padding-bottom: 25px;
+    margin: 0 auto;
 }
 
 .about > .about__title {
@@ -13,7 +16,7 @@
 
 .about__title {
     font-size: 36px;
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Bold";
     padding: 0;
     margin: 0 auto;
     text-align: center;
@@ -28,6 +31,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1900px;
+    margin: 0 auto;
 }
 
 .about__item {
@@ -80,4 +85,31 @@
     font-size: 16px;
     width: 400px;
     text-align: center;
+}
+
+
+@media (max-width: 1899px) {
+    .about {
+        min-width: $mobile-width;
+        width: auto;
+    }
+
+    .about__list {
+        flex-wrap: nowrap;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about__list {
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .about__item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
