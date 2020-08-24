@@ -83,3 +83,9 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 767px) {
+    .form {
+        min-width: 320px;
+    }
+}

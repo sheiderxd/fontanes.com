@@ -14,9 +14,14 @@
     display: flex;
     width: $fullhd-width;
     box-sizing: border-box;
+    padding-left: 196px;
+    position: relative;
 }
 
 .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
     flex-shrink: 0;
     background-color: #B4CDD4;
     width: 196px;
@@ -40,8 +45,6 @@
     margin: 0;
     text-decoration: none;
     align-items: center;
-    padding-right: 40px;
-    padding-left: 134px;
     justify-content: center;
 }
 
@@ -64,52 +67,6 @@
     display: none;
 }
 
-
-@media (min-width: $desktop-width) and (max-width: 1899px) {
-
-    .header__navigation {
-        padding-right: 35px;
-        width: 100%;
-    }
-
-    .header__menu {
-        padding-left: 80px;
-    }
-}
-
-@media (min-width: $square-width) and (max-width: 1199px) {
-
-    .header__menu {
-        padding-left: 80px;
-    }
-
-    .header__logo {
-        width: 165px;
-    }
-
-    .header__navigation {
-        padding-right: 25px;
-        width: 100%;
-    }
-}
-
-@media (min-width: $tablet-width) and (max-width: 999px) {
-
-    .header__logo {
-        width: 165px;
-    }
-
-    .header__navigation {
-        padding-right: 25px;
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .header__menu {
-        padding-left: 15px;
-    }
-}
-
 @media (max-width: 767px) {
 
     .site-menu {
@@ -122,21 +79,11 @@
 
     .header__navigation {
         min-width: $mobile-width;
-        padding-left: 0;
         padding-right: 0;
     }
 
     .header {
-        min-height: 50px;
-    }
-
-    .header__logo {
-        width: 128px;
-    }
-
-    .header__logo,
-    .header__logo a {
-        height: 50px;
+        min-height: 80px;
     }
 
     .header__contact-list {
@@ -149,13 +96,14 @@
         display: block;
         background-color: white;
         border: none;
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         position: relative;
         padding: 0;
         margin: 0;
         outline: none;
         cursor: pointer;
+        margin-left: auto;
     }
 
     .header__button::before {
